@@ -6,8 +6,13 @@
   "scripts": {
     "start": "ts-node ./src/index.ts"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^1.5.0",
+    "moment-timezone": "^0.5.43"
+  },
   "devDependencies": {
+    "@types/node": "^20.5.9",
+    "dotenv": "^16.3.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }
