@@ -9,4 +9,5 @@ const tweetCommits = async () => {
 
 const job = new cronJob.CronJob("0 0 0 * * *", tweetCommits);
 
+console.log("Starting cron job...");
 job.start();
