@@ -1,13 +1,13 @@
 import axios from "axios";
 import dotenv from "dotenv";
 import { ICommit, IEvent } from "./intefaces";
+import { GITHUB_USERNAME } from "../config";
 dotenv.config();
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-const USERNAME = "biplo12";
 
 const githubCommits = async () => {
   const { data } = await axios.get(
-    `https://api.github.com/users/${USERNAME}/events`,
+    `https://api.github.com/users/${GITHUB_USERNAME}/events`,
     {
       headers: {
         Authorization: `Token ${GITHUB_TOKEN}`,
